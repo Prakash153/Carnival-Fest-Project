@@ -1,0 +1,226 @@
+
+.wrapper{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   min-height: 40vh;
+}
+ .span{
+     position:absolute;
+     left: 24%; top: 30%;
+      text-align: center; 
+      font-family  :'Franklin Gothic Medium' ;
+       color: rgb(252, 250, 250); 
+       font-weight: 600; 
+       text-transform: uppercase;
+       font-size: 35px;
+       text-decoration: underline;
+    }
+.wrapper .owl-carousel{ 
+   margin: auto;
+   padding: 0 30px;
+
+}
+.owl-carousel .items{
+    box-shadow: rgb(243, 232, 215,0.7);
+}
+.content{
+     
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    padding-top: 70px;
+    text-align: center;
+}
+.content h1{
+    text-decoration: underline;
+    color:rgb(253, 253, 253);
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 22px;
+
+}
+.content h4{
+    font-family: 'Bree Serif', serif;
+}
+.content p{
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Serif TC', serif;
+    
+}
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.details{
+    flex-basis: 31%;
+    background: rgb(235, 176, 190,0.2);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+.details p{
+    color: rgb(247, 246, 245);
+}
+.row h4{
+    color: rgb(250, 250, 250);
+    text-align: center;
+    font: 300;
+    font-weight: 300;
+    margin: 10px 0px;
+
+}
+.details:hover{
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.7);
+}
+ 
+.photos{
+     position: absolute;
+     left: 30%;
+     top:70%;
+    
+
+}
+.photos h4{
+    color: blanchedalmond;
+}
+footer{
+    border-top: 2px solid white;
+    position: absolute;
+    margin-top: 70px;
+    top: 350%;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+footer .container .sec{
+    margin-right: 30px;
+
+}
+footer .container .sec-aboutus{
+    width: 30%;
+
+}
+footer .container   h3{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+     margin-bottom: 35px;
+}
+footer .container h3:before{
+    content: ' ';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer  p{
+    color: #999;
+    font-family: 'Franklin Gothic Medium' ;
+}
+.sci{
+    margin-top: 20px ;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+.sci li a:hover{
+    background: #f00;
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.sec-quicklinks{
+position: relative;
+width: 25%;
+
+}
+.sec-quicklinks ul li{
+    list-style: none;
+}
+.sec-quicklinks ul li a{
+    font-family: 'Franklin Gothic Medium' ;
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.sec-quicklinks ul li a:hover{
+    color: #fff;
+}
+.sec-contact{
+  width: calc(25%);
+  margin-right: 0  !important ;  
+
+}
+.sec-contact .info {
+    position: relative;
+
+
+}
+.sec-contact .info li{
+    display: flex;
+     margin-bottom: 16px;
+}
+.sec-contact .info li span:nth-child(1){
+    color: #fff;
+    font-family: 'Franklin Gothic Medium' ;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.sec-contact .info li span{
+    font-family: 'Franklin Gothic Medium' ;
+    color: #999 ;
+
+}
+.sec-contact .info li  a{
+    color: #999;
+    text-decoration: none;
+
+}
+.sec-contact .info li  a:hover{
+    color: #fff  ;
+}
+.copyright{
+    margin-top: 50px;
+    width: 100%;
+    background: #181818 ;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}

@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+
+    }
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: rgba(0, 0,0, 0.2);
+    position: static;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 30px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 8px 25px;
+    font-size: 14px;
+    font-weight: 300px;
+    font-family: 'Franklin Gothic Medium';
+    text-transform: uppercase;
+    transition:  all .5s ease;
+}
+.navbar ul li a:hover,.navbar ul li a.active{
+    background: rgba(184, 25, 25, 0.7);
+    border-radius: 6px;
+    bottom: 0 0 10px white;
+}
+     nav .logo img{
+        position: absolute;
+        left: 10px;
+        height: 60px;
+        top: 10px;
+
+    }
+#home{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.1);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+        content: "";
+         position:absolute ;
+         top: 0;
+        right: 0;
+        background: linear-gradient(rgba(0,0,0,0.5),#fa6565) ,url(ss\ \(1\).jpg) no-repeat center center/cover;
+height: 915px;
+width: 100%;
+z-index: -1; 
+  }
+.heading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.title-text h1{
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+#gallery{
+ width: 100%;
+ padding: 70px 0;
+ background-image: url(o.jpg);
+
+}
+.service-box{
+ 
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    
+}
+
+.single-service{
+    flex-basis: 48%;
+    text-align:center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.single-service img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background:linear-gradient(rgba(0,0,0,0.01),#e91b9a);
+    opacity: 0;
+    transition: 1s;
+}
+.single-service:hover .overlay{
+    opacity: 1;
+}
+.service-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-desc p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.single-service:hover .service-desc{
+    bottom: 40%;
+    opacity: 1;
+}
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+   
+ background-image: url(o.jpg);
+ 
+
+}
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 90px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+    color:rgba(253, 249, 249, 0.63);
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.testimonial-col:hover{
+    box-shadow:0 0 20px 0px rgba(248, 4, 195, 0.7);
+    transition: 1s;
+}
+h2{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+footer{
+    border-top: 2px solid white;
+    position: absolute;
+    margin-top: 70px;
+    top: 470%;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+footer .container .sec{
+    margin-right: 30px;
+
+}
+footer .container .sec-aboutus{
+    width: 30%;
+
+}
+footer .container   h3{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+     margin-bottom: 35px;
+}
+footer .container h3:before{
+    content: ' ';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer  p{
+    color: #999;
+    font-family: 'Franklin Gothic Medium' ;
+}
+.sci{
+    margin-top: 20px ;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+.sci li a:hover{
+    background: #f00;
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.sec-quicklinks{
+position: relative;
+width: 25%;
+
+}
+.sec-quicklinks ul li{
+    list-style: none;
+}
+.sec-quicklinks ul li a{
+    font-family: 'Franklin Gothic Medium' ;
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.sec-quicklinks ul li a:hover{
+    color: #fff;
+}
+.sec-contact{
+  width: calc(25%);
+  margin-right: 0  !important ;  
+
+}
+.sec-contact .info {
+    position: relative;
+
+
+}
+.sec-contact .info li{
+    display: flex;
+     margin-bottom: 16px;
+}
+.sec-contact .info li span:nth-child(1){
+    color: #fff;
+    font-family: 'Franklin Gothic Medium' ;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.sec-contact .info li span{
+    font-family: 'Franklin Gothic Medium' ;
+    color: #999 ;
+
+}
+.sec-contact .info li  a{
+    color: #999;
+    text-decoration: none;
+
+}
+.sec-contact .info li  a:hover{
+    color: #fff  ;
+}
+.copyright{
+    margin-top: 50px;
+    width: 100%;
+    background: #181818 ;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}

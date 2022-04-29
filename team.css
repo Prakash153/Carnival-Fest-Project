@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+
+    }
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: rgba(0, 0,0, 0.2);
+    position: static;
+    top: 0;
+}
+nav .logo img{
+        position: absolute;
+        left: 10px;
+        height: 60px;
+        top: 10px;
+
+    }
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 30px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 8px 25px;
+    font-size: 14px;
+    font-weight: 300px;
+    font-family: 'Franklin Gothic Medium';
+    text-transform: uppercase;
+    transition:  all .5s ease;
+}
+.navbar ul li a:hover,.navbar ul li a.active{
+    background: rgba(184, 25, 25, 0.7);
+    border-radius: 6px;
+    bottom: 0 0 10px white;
+}
+h1{
+    font-family: century;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 80px;
+    color: #fff;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+body{
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(0,0,0,0.5),#05071a) ,url(ff_1.jpg) no-repeat center center/cover;
+    min-height: 100vh;
+   
+}
+.container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0 ;
+}
+.container .card{
+    position: relative;
+    width: 400px;
+    height: 430px;
+    background:rgba(255, 255,255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0,0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.container .card .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    transition: 0.5s;
+}
+.container .card:hover.content{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.container .card .content .imgbox{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:10px solid rgba(0, 0,0, 0.25);
+}
+.container .card .content .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .content .contentbox h3{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+.container .card .content .contentbox h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+.container .card .sci{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+.container .card .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+.container .card:hover .sci li{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container .card .sci li a{
+    color: #fff;
+    font-size: 24px;
+}
+footer{
+    border-top: 2px solid white;
+    position: absolute;
+    margin-top: 70px;
+    top: 220%;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+footer .container .sec{
+    margin-right: 30px;
+
+}
+footer .container .sec-aboutus{
+    width: 30%;
+
+}
+footer .container   h3{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+     margin-bottom: 35px;
+}
+footer .container h3:before{
+    content: ' ';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer  p{
+    color: #999;
+}
+.sci{
+    margin-top: 20px ;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+.sci li a:hover{
+    background: #f00;
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.sec-quicklinks{
+position: relative;
+width: 25%;
+
+}
+.sec-quicklinks ul li{
+    list-style: none;
+}
+.sec-quicklinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.sec-quicklinks ul li a:hover,.sec-quicklinks ul li a.active{
+    text-decoration: underline;
+    color: #fff;
+}
+.sec-contact{
+  width: calc(25%);
+  margin-right: 0  !important ;  
+
+}
+.sec-contact .info {
+    position: relative;
+
+
+}
+.sec-contact .info li{
+    display: flex;
+     margin-bottom: 16px;
+}
+.sec-contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.sec-contact .info li span{
+    color: #999 ;
+
+}
+.sec-contact .info li  a{
+    color: #999;
+    text-decoration: none;
+
+}
+.sec-contact .info li  a:hover{
+    color: #fff  ;
+}
+.copyright{
+    margin-top: 50px;
+    width: 100%;
+    background: #181818 ;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+.sci .twitter a:hover{
+color: aqua
+}
